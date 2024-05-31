@@ -1,0 +1,30 @@
+.theme-switch-btn {
+    border: none;
+    background: none;
+}
+
+.theme-switch-btn .material-icons {
+    transition: transform 0.2s;
+}
+
+.theme-switch-btn:hover .material-icons {
+    transform: scale(1.2);
+}
+
+h1, h2, h3 {
+    color: #17A2B8;
+}
+
+#game-iframe {
+    width: 100%;
+    max-width: 552px;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    #game-iframe {
+        width: 200px;
+        height: auto;
+    }
+}
+
