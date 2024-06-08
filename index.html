@@ -6,32 +6,68 @@
     <title>Luis Chacón, Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body data-bs-theme="dark">
     <div class="container mt-5">
-        <!-- Theme Switch Button -->
-        <div class="text-end mb-3">
-            <button id="themeSwitchButton" class="theme-switch-btn">
-                <span class="material-icons">dark_mode</span>
-            </button>
-        </div>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="#">Luis Chacón</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#highlight-project">Highlight Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="documents/Luis Chacon Resume.pdf" class="nav-link nav-special-link" target="_blank">Download My CV!</a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="themeSwitchButton" class="theme-switch-btn ms-3">
+                    <span class="material-icons">dark_mode</span>
+                </button>
+            </div>
+        </nav>
 
         <!-- Profile Section -->
-        <section id="profile" class="text-center mb-5">
-            <h1 class="mt-3">Luis Chacón</h1>
-            <p class="lead">Software Engineer | Game Designer and Developer</p>
-            <a href="documents/Luis Chacon Resume.pdf" class="btn btn-info mt-3" target="_blank">Download My Full CV</a>            
+        <section id="profile" class="text-center m-5">
+            <h1 class="pt-5">Luis Chacón</h1>
+            <h2 id="job-title" class="lead">Senior Cloud Engineer</h2>
+            <a href="documents/Luis Chacon Resume.pdf" class="btn btn-info mt-3" target="_blank">Download My CV</a>
             <a href="https://amenohi.itch.io/" class="btn btn-info mt-3" target="_blank">See My Games</a>
             <a href="https://www.linkedin.com/in/luis-chacon-mora/" class="btn btn-info mt-3" target="_blank">Check My LinkedIn</a>
         </section>
+
 
         <!-- About Me Section -->
         <section id="about-me" class="mb-5">
             <h2 class="mb-3">About Me</h2>
             <div class="row mb-4">
                 <div class="col-md-6 text-center order-last order-md-first">
-                    <img src="images/pexels-kevin-ku-92347-577585 (Medium).jpg" alt="An image of a pair of glasses in front of a computer screen with software development programs displayed" class="img-fluid">
+                    <div id="Carousel-Software-Development" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pexels-kevin-ku-92347-577585 (Medium).jpg" alt="Image 1" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-thisisengineering-3861958 (Medium).jpg" alt="Image 2" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-luis-gomes-166706-546819 (Medium).jpg" alt="Image 3" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
@@ -54,12 +90,36 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="images/pexels-jeshoots-com-147458-442576 (Medium).jpg" alt="An image of 2 game controllers and a screen. People are playing games" class="img-fluid">
+                    <div id="Carousel-Game-Development" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pexels-jeshoots-com-147458-442576 (Medium).jpg" alt="Image 1" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-cottonbro-4842490 (Medium).jpg" alt="Image 2" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-vanessa-loring-7869452 (Medium).jpg" alt="Image 3" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-md-6 text-center order-last order-md-first">
-                    <img src="images/pexels-czapp-arpad-3647289-14546721 (Medium).jpg" alt="A top view of a girl with a laptop working. She is surrounded by books and is concentrated" class="img-fluid">
+                    <div id="Carousel-Professional-Development" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pexels-czapp-arpad-3647289-14546721 (Medium).jpg" alt="Image 1" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-emily-ranquist-493228-1205651 (Medium).jpg" alt="Image 2" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pexels-jessbaileydesign-768474 (Medium).jpg" alt="Image 3" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
@@ -71,6 +131,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Highlight Project Section -->
         <section id="highlight-project" class="highlight-project mb-5">
@@ -106,7 +167,24 @@
     <!-- Footer Section -->
     <footer class="text-center mt-5 py-4 border-top">
         <p>&copy; 2024 Luis Chacón. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/luis-chacon-mora/" target="_blank" class="me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/D3C0D" target="_blank" class="me-3">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:luis.chacon.mora@gmail.com" class="me-3">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
     </footer>
+
+
+    <!-- Floating Email Button -->
+    <a href="mailto:luis.chacon.mora@gmail.com" class="float-button">
+        <i class="fas fa-envelope"></i>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
